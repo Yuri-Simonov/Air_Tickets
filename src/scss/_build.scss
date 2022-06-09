@@ -1,0 +1,33 @@
+@import "_vars.scss";
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 100%);
+    background: $gray;
+    color: $white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 110%;
+    min-width: 320px;
+}
+main {
+    flex: 1 1 auto;
+}
+
+#root {
+    height: 100%;
+}

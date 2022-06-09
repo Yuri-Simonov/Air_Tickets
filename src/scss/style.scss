@@ -1,0 +1,16 @@
+// Обнуляющие стили
+@import "nullstyle";
+// Основа. Корневые теги и главная обертка
+@import "_build";
+// Переменные
+@import "_vars";
+// Главная страница
+@import "main-page";
+// Список рейсов
+@import "blocks/content";
+// Рейс
+@import "blocks/flight";
+// Боковая панель с фильтрами
+@import "blocks/sidebar";
+// Кнопка "Показать еще"
+@import "blocks/show-more";

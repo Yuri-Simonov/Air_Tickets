@@ -1,0 +1,56 @@
+.sidebar {
+    &__item {
+        margin-bottom: 20px;
+        color: $blue;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+        color: $orange;
+    }
+
+    &__form {
+        label {
+            display: grid;
+            grid-template-columns: 20px 1fr;
+            align-items: start;
+            font-size: 14px;
+            line-height: 1.1;
+            cursor: pointer;
+            span {
+                justify-self: end;
+            }
+            transition: all 0.3s ease;
+            &:hover {
+                color: darken($color: $blue, $amount: 10);
+            }
+        }
+        label.sidebar__label-col3 {
+            grid-template-columns: 20px 1fr 1fr;
+        }
+        input[type="checkbox"] + *,
+        input[type="radio"] + * {
+            position: relative;
+            margin-left: 5px;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 6px;
+                height: 1px;
+                top: 7px;
+                transform: translateY(-50%);
+                left: -8px;
+                display: block;
+                background-color: $white;
+            }
+        }
+        input[type="number"] {
+            margin-bottom: 8px;
+            padding: 2px 5px;
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.content {
+    &__item {
+        margin-bottom: 30px;
+    }
+
+    &__header {
+        background-color: $blue-2;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        padding: 10px;
+    }
+
+    &__header-logo {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__header-info {
+        justify-self: end;
+        text-align: right;
+    }
+
+    &__header-price {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    &__header-prompt {
+        font-size: 12px;
+    }
+
+    &__flight {
+    }
+
+    &__footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px;
+        button {
+            font-size: 18px;
+            background-color: $orange;
+            color: $white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: darken($color: $orange, $amount: 10);
+            }
+        }
+    }
+}
